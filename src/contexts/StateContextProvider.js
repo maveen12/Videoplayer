@@ -13,7 +13,7 @@ export const StateContextProvider = ({ children }) => {
     setLoading(true);
     const data = await axios.get(`${baseUrl}/${url}`, {
       params: {
-        key: process.env.REACT_APP_API_KEY,
+        key: 'AIzaSyCaWhYRAvG91pcTq_I9Eew3C3uOVe-V_zA',
         maxResults: 50,
       },
     });
@@ -25,7 +25,7 @@ export const StateContextProvider = ({ children }) => {
   const fetchOtherData = async (url) => {
     const data1 = await axios.get(`${baseUrl}/${url}`, {
       params: {
-        key: process.env.REACT_APP_API_KEY,
+        key: 'AIzaSyCaWhYRAvG91pcTq_I9Eew3C3uOVe-V_zA',
         maxResults: 50,
         regionCode: 'IN',
       },
